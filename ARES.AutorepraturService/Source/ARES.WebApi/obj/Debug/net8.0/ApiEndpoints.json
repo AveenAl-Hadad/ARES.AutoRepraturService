@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "ARES.WebApi.Controllers.TermineController",
+    "Method": "PostTermin",
+    "RelativePath": "api/Termine",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "termin",
+        "Type": "ARES.Businesslogik.Models.Termin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ARES.Businesslogik.Models.Termin",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ARES.WebApi.Controllers.TermineController",
+    "Method": "GetTermin",
+    "RelativePath": "api/Termine/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ARES.Businesslogik.Models.Termin",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

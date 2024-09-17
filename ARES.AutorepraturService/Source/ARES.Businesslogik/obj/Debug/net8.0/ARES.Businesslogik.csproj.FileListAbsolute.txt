@@ -1,0 +1,15 @@
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\bin\Debug\net8.0\ARES.Businesslogik.deps.json
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\bin\Debug\net8.0\ARES.Businesslogik.runtimeconfig.json
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\bin\Debug\net8.0\ARES.Businesslogik.dll
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\bin\Debug\net8.0\ARES.Businesslogik.pdb
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.csproj.AssemblyReference.cache
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.AssemblyInfoInputs.cache
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.AssemblyInfo.cs
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.csproj.CoreCompileInputs.cache
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.sourcelink.json
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.dll
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\refint\ARES.Businesslogik.dll
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.pdb
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ARES.Businesslogik.genruntimeconfig.cache
+C:\Users\aveen alhadad\source\repos\ARES AutoRepraturService\ARES.AutorepraturService\Source\ARES.Businesslogik\obj\Debug\net8.0\ref\ARES.Businesslogik.dll

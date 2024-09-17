@@ -1,0 +1,6 @@
+@ARES.WebApi_HostAddress = http://localhost:5050
+
+GET {{ARES.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

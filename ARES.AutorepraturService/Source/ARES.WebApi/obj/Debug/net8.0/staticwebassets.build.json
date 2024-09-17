@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KkyXhGxI0z8nmOKYPMqf35rQMTfDj8jZ6iN2umTUwtI=",
+  "Source": "ARES.WebApi",
+  "BasePath": "_content/ARES.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

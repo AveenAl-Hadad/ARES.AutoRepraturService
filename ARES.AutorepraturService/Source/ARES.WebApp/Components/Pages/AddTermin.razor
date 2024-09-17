@@ -1,0 +1,30 @@
+﻿@page "/add-termin"
+@using ARES.Businesslogik.Models
+@inject HttpClient Http
+
+<h1>Termin hinzufügen</h1>
+
+<EditForm Model="newTermin" OnValidSubmit="SubmitTermin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="abholung">Abholung:</label>
+        <InputDate id="abholung" @bind-Value="newTermin.Abholung" />
+    </div>
+    <div>
+        <label for="auto">Auto:</label>
+        <InputText id="auto" @bind-Value="newTermin.Auto.KFZ" />
+    </div>
+
+    <button type="submit">Termin hinzufügen</button>
+</EditForm>
+
+@code {
+    private Termin newTermin = new Termin();
+
+    private async Task SubmitTermin()
+    {
+        await Http.PostAsJsonAsync("api/Termine", newTermin);
+    }
+}

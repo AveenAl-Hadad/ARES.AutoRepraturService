@@ -1,0 +1,53 @@
+﻿@page "/"
+@using ARES.Businesslogik.Models
+@inject HttpClient Http
+@attribute [StreamRendering]
+
+<PageTitle>Termin Übersicht</PageTitle>
+
+<button @onclick="AddTermin">Termin hinzufügen</button>
+
+@if (termine != null)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Abholung</th>
+                <th>Auto</th>
+                <th>Erledigt</th>
+                <th>Aktionen</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var termin in termine)
+            {
+                <tr>
+                    <td>@termin.Abholung.ToShortDateString()</td>
+                    <td>@termin.Auto.KFZ</td>
+                    <td>@termin.Erledigt</td>
+                    <td><button @onclick="() => ViewDetails(termin.Id)">Details</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    
+    private IEnumerable<Termin> termine;
+
+    protected override async Task OnInitializedAsync()
+    {
+        termine = await Http.GetFromJsonAsync<IEnumerable<Termin>>("api/Termine");
+    }
+
+    private void AddTermin()
+    {
+        // Logik zum Hinzufügen eines Termins
+    }
+
+    private void ViewDetails(int id)
+    {
+        // Logik zur Detailansicht eines Termins
+    }
+}

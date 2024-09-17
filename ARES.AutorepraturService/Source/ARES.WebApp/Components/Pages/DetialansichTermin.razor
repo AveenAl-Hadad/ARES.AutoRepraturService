@@ -1,0 +1,39 @@
+﻿@page "/termin/{id:int}"
+@using ARES.Businesslogik.Models
+@inject HttpClient Http
+<h1>Termin Details</h1>
+
+@if (termin != null)
+{
+    <div>
+        <p><strong>Abholung:</strong> @termin.Abholung.ToShortDateString()</p>
+        <p><strong>Auto:</strong> @termin.Auto.KFZ</p>
+        <p><strong>Schäden:</strong></p>
+        <ul>
+            @foreach (var schaden in termin.Auto.Schäden)
+            {
+                <li>
+                    @schaden.Beschreibung
+                    <button @onclick="() => MarkSchadenAsResolved(schaden.Id)">Als behoben markieren</button>
+                </li>
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Termin termin;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        termin = await Http.GetFromJsonAsync<Termin>($"api/Termine/{Id}");
+    }
+
+    private async Task MarkSchadenAsResolved(int schadenId)
+    {
+        // Logik zum Markieren des Schadens als behoben
+    }
+}
