@@ -1,0 +1,42 @@
+Implentierung Update-Funktion
+
+1. App
+Details-Seite angepasst:
+- Text gegen Input-Felder ausgetauscht
+- Update-Button implementiert
+- Update-Methode geschrieben
+- Route beachten im TerminDetails
+	private async Task UpdateTermin()
+		{
+			await Client.PutAsync($"api/termine/details/{Id}", termin);
+		}
+
+- HttpWrapper und IHttpClient Methoden eintragen
+	- Put async (ohne Jason) -> notwendig wenn man keine Rückgabewert hat
+		
+		public async Task PutAsync(string path, object content)
+			{
+				await this.httpClient.PutAsync(this.GetUrl(path), this.JsonToStringContent(content));
+			}
+
+		private StringContent JsonToStringContent(object content)
+		{
+			string serializedBody = JsonConvert.SerializeObject(content);
+			StringContent stringContent = new StringContent(serializedBody, Encoding.UTF8, "application/json");
+			return stringContent;
+		}
+2. Api
+- Implemtierung in den Controller:
+		[Route("details/{id}")]
+		[HttpPut]
+		public void UpdateTermin([FromBody] TerminModel termin)
+		{
+			this.terminService.UpdateTermin(termin);
+		}
+
+3. Business
+Im TerminService:
+- Methode anlegen und ins Interface eintragen
+- Strg Shift R -> pull members up => trägt die Methode ins Interface ein.
+
+4. Data Access Layer von Katja:
